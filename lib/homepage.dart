@@ -309,6 +309,7 @@ class HomePage extends StatelessWidget {
                                     const EdgeInsets.symmetric(horizontal: 5),
                                 child: Container(
                                   height: 155,
+                                  color: Colors.white,
                                   child: Column(
                                     mainAxisAlignment: MainAxisAlignment.start,
                                     children: <Widget>[
@@ -877,7 +878,6 @@ class HomePage extends StatelessWidget {
                                     const EdgeInsets.symmetric(horizontal: 5),
                                 child: Container(
                                   height: 155,
-                                  width: 228.7,
                                   color: Colors.white,
                                   child: Column(
                                     mainAxisAlignment: MainAxisAlignment.start,
