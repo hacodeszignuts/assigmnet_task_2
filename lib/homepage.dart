@@ -225,538 +225,248 @@ class HomePage extends StatelessWidget {
                           color: Colors.white),
                       child: Row(
                         children: <Widget>[
-                          Stack(
-                            children: <Widget>[
-                              ClipRRect(
-                                borderRadius: const BorderRadius.only(
-                                    topLeft: Radius.circular(8),
-                                    topRight: Radius.zero,
-                                    bottomLeft: Radius.circular(8),
-                                    bottomRight: Radius.zero),
-                                child: Image.asset(
-                                  'images/strawberry.png',
-                                  filterQuality: FilterQuality.high,
-                                  height: 155,
-                                  width: 114,
-                                  fit: BoxFit.cover,
-                                ),
-                              ),
-                              Container(
-                                height: 20,
-                                width: 94,
-                                padding:
-                                    const EdgeInsets.symmetric(horizontal: 3),
-                                alignment: Alignment.centerLeft,
-                                decoration: const BoxDecoration(
-                                    color: Color(0xff8BC53F),
-                                    borderRadius: BorderRadius.only(
-                                        topLeft: Radius.circular(16),
-                                        topRight: Radius.zero,
-                                        bottomRight: Radius.circular(40),
-                                        bottomLeft: Radius.zero)),
-                                child: const Text(
-                                  '10% Discount',
-                                  style: TextStyle(
-                                    color: Colors.white,
-                                    fontSize: 10,
-                                    fontFamily: 'Popm',
+                          Expanded(
+                            flex: 3,
+                            child: Stack(
+                              children: <Widget>[
+                                ClipRRect(
+                                  borderRadius: const BorderRadius.only(
+                                      topLeft: Radius.circular(8),
+                                      topRight: Radius.zero,
+                                      bottomLeft: Radius.circular(8),
+                                      bottomRight: Radius.zero),
+                                  child: Image.asset(
+                                    'images/strawberry.png',
+                                    filterQuality: FilterQuality.high,
+                                    height: 155,
+                                    width: 114,
+                                    fit: BoxFit.cover,
                                   ),
                                 ),
-                              ),
-                              Positioned(
-                                bottom: 3,
-                                right: 7,
-                                child: Opacity(
-                                  opacity: 0.85,
-                                  child: Container(
-                                    alignment: Alignment.center,
-                                    height: 17,
-                                    width: 42,
-                                    decoration: BoxDecoration(
-                                        color: Colors.white,
-                                        borderRadius:
-                                            BorderRadius.circular(16)),
-                                    child: Row(
-                                      mainAxisAlignment:
-                                          MainAxisAlignment.center,
-                                      children: const <Widget>[
-                                        Icon(
-                                          Icons.star,
-                                          color: Color(0xff1E8040),
-                                          size: 14,
-                                        ),
-                                        Text(
-                                          '4.5',
-                                          style: TextStyle(
-                                            fontSize: 10,
-                                            fontFamily: 'Popm',
-                                          ),
-                                        ),
-                                      ],
-                                    ),
-                                  ),
-                                ),
-                              ),
-                            ],
-                          ),
-                          Padding(
-                              padding:
-                                  const EdgeInsets.symmetric(horizontal: 5),
-                              child: Container(
-                                height: 155,
-                                width: 228.7,
-                                color: Colors.white,
-                                child: Column(
-                                  mainAxisAlignment: MainAxisAlignment.start,
-                                  children: <Widget>[
-                                    Row(
-                                      children: <Widget>[
-                                        Image.asset(
-                                          'images/tesco.png',
-                                          height: 50,
-                                          filterQuality: FilterQuality.high,
-                                        ),
-                                      ],
-                                    ),
-                                    Padding(
-                                      padding: const EdgeInsets.symmetric(
-                                          horizontal: 5),
-                                      child: Column(
-                                        children: <Widget>[
-                                          Row(
-                                            children: const <Widget>[
-                                              Text(
-                                                'Samsung TV',
-                                                style: TextStyle(
-                                                    color: Colors.black,
-                                                    fontFamily: 'Popm',
-                                                    fontSize: 11),
-                                              ),
-                                            ],
-                                          ),
-                                          const SizedBox(
-                                            height: 2.5,
-                                          ),
-                                          Row(
-                                            children: const <Widget>[
-                                              Text(
-                                                'Screen Size',
-                                                style: TextStyle(
-                                                    color: Colors.black,
-                                                    fontFamily: 'Popm',
-                                                    fontSize: 11),
-                                              ),
-                                              Spacer(),
-                                              Text(
-                                                '6 x KG',
-                                                style: TextStyle(
-                                                    color: Colors.black,
-                                                    fontFamily: 'Popm',
-                                                    fontSize: 11),
-                                              ),
-                                            ],
-                                          ),
-                                          const SizedBox(
-                                            height: 2.5,
-                                          ),
-                                          Row(
-                                            children: const <Widget>[
-                                              Text(
-                                                '(500 g - £5)',
-                                                style: TextStyle(
-                                                    color: Color(0xFF858585),
-                                                    fontFamily: 'Popm',
-                                                    fontSize: 11),
-                                              ),
-                                              Spacer(),
-                                              Text(
-                                                '£ 7.90',
-                                                style: TextStyle(
-                                                    color: Colors.black,
-                                                    fontFamily: 'Popm',
-                                                    decoration: TextDecoration
-                                                        .lineThrough,
-                                                    fontSize: 9),
-                                              ),
-                                              SizedBox(
-                                                width: 10,
-                                              ),
-                                              Text(
-                                                '£ 6.90',
-                                                style: TextStyle(
-                                                    color: Color(0xff1E8040),
-                                                    fontFamily: 'Popm',
-                                                    fontWeight: FontWeight.bold,
-                                                    fontSize: 12),
-                                              ),
-                                            ],
-                                          ),
-                                          const SizedBox(
-                                            height: 3,
-                                          ),
-                                          Row(
-                                            children: const <Widget>[
-                                              Text(
-                                                'Lorem ipsum dolor.......',
-                                                style: TextStyle(
-                                                    color: Color(0xFFB11F1F),
-                                                    fontFamily: 'Popm',
-                                                    fontSize: 12),
-                                              )
-                                            ],
-                                          ),
-                                          Row(
-                                            mainAxisAlignment:
-                                                MainAxisAlignment.end,
-                                            children: <Widget>[
-                                              Container(
-                                                width: 96,
-                                                height: 20,
-                                                alignment: Alignment.center,
-                                                decoration: BoxDecoration(
-                                                  color:
-                                                      const Color(0xFFE8FEBE),
-                                                  borderRadius:
-                                                      BorderRadius.circular(12),
-                                                ),
-                                                child: Row(
-                                                  mainAxisAlignment:
-                                                      MainAxisAlignment.center,
-                                                  children: const <Widget>[
-                                                    InkWell(
-                                                      child: Icon(
-                                                        Icons
-                                                            .remove_circle_outline,
-                                                        color:
-                                                            Color(0xff1E8040),
-                                                        size: 20,
-                                                      ),
-                                                    ),
-                                                    Spacer(),
-                                                    Text(
-                                                      '1',
-                                                      style: TextStyle(
-                                                          color: Colors.black,
-                                                          fontFamily: 'Popm',
-                                                          fontSize: 14),
-                                                    ),
-                                                    Spacer(),
-                                                    InkWell(
-                                                      child: Icon(
-                                                        Icons
-                                                            .add_circle_outline,
-                                                        color:
-                                                            Color(0xff1E8040),
-                                                        size: 20,
-                                                      ),
-                                                    ),
-                                                  ],
-                                                ),
-                                              )
-                                            ],
-                                          )
-                                        ],
-                                      ),
-                                    )
-                                  ],
-                                ),
-                              ))
-                        ],
-                      ),
-                    ),
-                  ),
-                  Padding(
-                    padding: const EdgeInsets.all(20.0),
-                    child: Container(
-                      decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(8),
-                          boxShadow: const [
-                            BoxShadow(
-                              color: Colors.grey,
-                              blurRadius: 6,
-                            )
-                          ],
-                          color: Colors.white),
-                      child: Row(
-                        children: <Widget>[
-                          Stack(
-                            children: <Widget>[
-                              ClipRRect(
-                                borderRadius: const BorderRadius.only(
-                                    topLeft: Radius.circular(8),
-                                    topRight: Radius.zero,
-                                    bottomLeft: Radius.circular(8),
-                                    bottomRight: Radius.zero),
-                                child: Image.asset(
-                                  'images/strawberry.png',
-                                  filterQuality: FilterQuality.high,
-                                  height: 155,
-                                  width: 114,
-                                  fit: BoxFit.cover,
-                                ),
-                              ),
-                              Container(
-                                height: 20,
-                                width: 94,
-                                padding:
-                                    const EdgeInsets.symmetric(horizontal: 3),
-                                alignment: Alignment.centerLeft,
-                                decoration: const BoxDecoration(
-                                    color: Color(0xff8BC53F),
-                                    borderRadius: BorderRadius.only(
-                                        topLeft: Radius.circular(16),
-                                        topRight: Radius.zero,
-                                        bottomRight: Radius.circular(40),
-                                        bottomLeft: Radius.zero)),
-                                child: const Text(
-                                  '10% Discount',
-                                  style: TextStyle(
+                                Container(
+                                  height: 20,
+                                  width: 94,
+                                  padding:
+                                      const EdgeInsets.symmetric(horizontal: 3),
+                                  alignment: Alignment.centerLeft,
+                                  decoration: const BoxDecoration(
+                                      color: Color(0xff8BC53F),
+                                      borderRadius: BorderRadius.only(
+                                          topLeft: Radius.circular(16),
+                                          topRight: Radius.zero,
+                                          bottomRight: Radius.circular(40),
+                                          bottomLeft: Radius.zero)),
+                                  child: const Text(
+                                    '10% Discount',
+                                    style: TextStyle(
                                       color: Colors.white,
                                       fontSize: 10,
-                                      fontFamily: 'Popm'),
-                                ),
-                              ),
-                              Positioned(
-                                bottom: 3,
-                                right: 7,
-                                child: Opacity(
-                                  opacity: 0.85,
-                                  child: Container(
-                                    alignment: Alignment.center,
-                                    height: 17,
-                                    width: 42,
-                                    decoration: BoxDecoration(
-                                        color: Colors.white,
-                                        borderRadius:
-                                            BorderRadius.circular(16)),
-                                    child: Row(
-                                      mainAxisAlignment:
-                                          MainAxisAlignment.center,
-                                      children: const <Widget>[
-                                        Icon(
-                                          Icons.star,
-                                          color: Color(0xff1E8040),
-                                          size: 14,
-                                        ),
-                                        Text(
-                                          '4.5',
-                                          style: TextStyle(
-                                              fontSize: 10, fontFamily: 'Popm'),
-                                        ),
-                                      ],
+                                      fontFamily: 'Popm',
                                     ),
                                   ),
                                 ),
-                              ),
-                            ],
-                          ),
-                          Stack(
-                            children: [
-                              Padding(
-                                  padding:
-                                      const EdgeInsets.symmetric(horizontal: 5),
-                                  child: Container(
-                                    height: 155,
-                                    width: 228.7,
-                                    color: Colors.white,
-                                    child: Column(
-                                      mainAxisAlignment:
-                                          MainAxisAlignment.start,
-                                      children: <Widget>[
-                                        Row(
-                                          children: <Widget>[
-                                            Image.asset(
-                                              'images/tesco.png',
-                                              height: 50,
-                                              filterQuality: FilterQuality.high,
+                                Positioned(
+                                  bottom: 3,
+                                  right: 7,
+                                  child: Opacity(
+                                    opacity: 0.85,
+                                    child: Container(
+                                      alignment: Alignment.center,
+                                      height: 17,
+                                      width: 42,
+                                      decoration: BoxDecoration(
+                                          color: Colors.white,
+                                          borderRadius:
+                                              BorderRadius.circular(16)),
+                                      child: Row(
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.center,
+                                        children: const <Widget>[
+                                          Icon(
+                                            Icons.star,
+                                            color: Color(0xff1E8040),
+                                            size: 14,
+                                          ),
+                                          Text(
+                                            '4.5',
+                                            style: TextStyle(
+                                              fontSize: 10,
+                                              fontFamily: 'Popm',
                                             ),
+                                          ),
+                                        ],
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                          Expanded(
+                            flex: 7,
+                            child: Padding(
+                                padding:
+                                    const EdgeInsets.symmetric(horizontal: 5),
+                                child: Container(
+                                  height: 155,
+                                  child: Column(
+                                    mainAxisAlignment: MainAxisAlignment.start,
+                                    children: <Widget>[
+                                      Row(
+                                        children: <Widget>[
+                                          Image.asset(
+                                            'images/tesco.png',
+                                            height: 50,
+                                            filterQuality: FilterQuality.high,
+                                          ),
+                                        ],
+                                      ),
+                                      Padding(
+                                        padding: const EdgeInsets.symmetric(
+                                            horizontal: 5),
+                                        child: Column(
+                                          children: <Widget>[
+                                            Row(
+                                              children: const <Widget>[
+                                                Text(
+                                                  'Samsung TV',
+                                                  style: TextStyle(
+                                                      color: Colors.black,
+                                                      fontFamily: 'Popm',
+                                                      fontSize: 11),
+                                                ),
+                                              ],
+                                            ),
+                                            const SizedBox(
+                                              height: 2.5,
+                                            ),
+                                            Row(
+                                              children: const <Widget>[
+                                                Text(
+                                                  'Screen Size',
+                                                  style: TextStyle(
+                                                      color: Colors.black,
+                                                      fontFamily: 'Popm',
+                                                      fontSize: 11),
+                                                ),
+                                                Spacer(),
+                                                Text(
+                                                  '6 x KG',
+                                                  style: TextStyle(
+                                                      color: Colors.black,
+                                                      fontFamily: 'Popm',
+                                                      fontSize: 11),
+                                                ),
+                                              ],
+                                            ),
+                                            const SizedBox(
+                                              height: 2.5,
+                                            ),
+                                            Row(
+                                              children: const <Widget>[
+                                                Text(
+                                                  '(500 g - £5)',
+                                                  style: TextStyle(
+                                                      color: Color(0xFF858585),
+                                                      fontFamily: 'Popm',
+                                                      fontSize: 11),
+                                                ),
+                                                Spacer(),
+                                                Text(
+                                                  '£ 7.90',
+                                                  style: TextStyle(
+                                                      color: Colors.black,
+                                                      fontFamily: 'Popm',
+                                                      decoration: TextDecoration
+                                                          .lineThrough,
+                                                      fontSize: 9),
+                                                ),
+                                                SizedBox(
+                                                  width: 10,
+                                                ),
+                                                Text(
+                                                  '£ 6.90',
+                                                  style: TextStyle(
+                                                      color: Color(0xff1E8040),
+                                                      fontFamily: 'Popm',
+                                                      fontWeight:
+                                                          FontWeight.bold,
+                                                      fontSize: 12),
+                                                ),
+                                              ],
+                                            ),
+                                            const SizedBox(
+                                              height: 3,
+                                            ),
+                                            Row(
+                                              children: const <Widget>[
+                                                Text(
+                                                  'Lorem ipsum dolor.......',
+                                                  style: TextStyle(
+                                                      color: Color(0xFFB11F1F),
+                                                      fontFamily: 'Popm',
+                                                      fontSize: 12),
+                                                )
+                                              ],
+                                            ),
+                                            Row(
+                                              mainAxisAlignment:
+                                                  MainAxisAlignment.end,
+                                              children: <Widget>[
+                                                Container(
+                                                  width: 96,
+                                                  height: 20,
+                                                  alignment: Alignment.center,
+                                                  decoration: BoxDecoration(
+                                                    color:
+                                                        const Color(0xFFE8FEBE),
+                                                    borderRadius:
+                                                        BorderRadius.circular(
+                                                            12),
+                                                  ),
+                                                  child: Row(
+                                                    mainAxisAlignment:
+                                                        MainAxisAlignment
+                                                            .center,
+                                                    children: const <Widget>[
+                                                      InkWell(
+                                                        child: Icon(
+                                                          Icons
+                                                              .remove_circle_outline,
+                                                          color:
+                                                              Color(0xff1E8040),
+                                                          size: 20,
+                                                        ),
+                                                      ),
+                                                      Spacer(),
+                                                      Text(
+                                                        '1',
+                                                        style: TextStyle(
+                                                            color: Colors.black,
+                                                            fontFamily: 'Popm',
+                                                            fontSize: 14),
+                                                      ),
+                                                      Spacer(),
+                                                      InkWell(
+                                                        child: Icon(
+                                                          Icons
+                                                              .add_circle_outline,
+                                                          color:
+                                                              Color(0xff1E8040),
+                                                          size: 20,
+                                                        ),
+                                                      ),
+                                                    ],
+                                                  ),
+                                                )
+                                              ],
+                                            )
                                           ],
                                         ),
-                                        Padding(
-                                          padding: const EdgeInsets.symmetric(
-                                              horizontal: 5),
-                                          child: Column(
-                                            children: <Widget>[
-                                              Row(
-                                                children: const <Widget>[
-                                                  Text(
-                                                    'Samsung TV',
-                                                    style: TextStyle(
-                                                        color: Colors.black,
-                                                        fontFamily: 'Popm',
-                                                        fontSize: 11),
-                                                  ),
-                                                ],
-                                              ),
-                                              const SizedBox(
-                                                height: 2.5,
-                                              ),
-                                              Row(
-                                                children: const <Widget>[
-                                                  Text(
-                                                    'Screen Size',
-                                                    style: TextStyle(
-                                                        color: Colors.black,
-                                                        fontFamily: 'Popm',
-                                                        fontSize: 11),
-                                                  ),
-                                                  Spacer(),
-                                                  Text(
-                                                    '6 x KG',
-                                                    style: TextStyle(
-                                                        color: Colors.black,
-                                                        fontFamily: 'Popm',
-                                                        fontSize: 11),
-                                                  ),
-                                                ],
-                                              ),
-                                              const SizedBox(
-                                                height: 2.5,
-                                              ),
-                                              Row(
-                                                children: const <Widget>[
-                                                  Text(
-                                                    '(500 g - £5)',
-                                                    style: TextStyle(
-                                                        color:
-                                                            Color(0xFF858585),
-                                                        fontFamily: 'Popm',
-                                                        fontSize: 11),
-                                                  ),
-                                                  Spacer(),
-                                                  Text(
-                                                    '£ 7.90',
-                                                    style: TextStyle(
-                                                        color: Colors.black,
-                                                        fontFamily: 'Popm',
-                                                        decoration:
-                                                            TextDecoration
-                                                                .lineThrough,
-                                                        fontSize: 9),
-                                                  ),
-                                                  SizedBox(
-                                                    width: 10,
-                                                  ),
-                                                  Text(
-                                                    '£ 6.90',
-                                                    style: TextStyle(
-                                                        color:
-                                                            Color(0xff1E8040),
-                                                        fontFamily: 'Popm',
-                                                        fontWeight:
-                                                            FontWeight.bold,
-                                                        fontSize: 12),
-                                                  ),
-                                                ],
-                                              ),
-                                              const SizedBox(
-                                                height: 3,
-                                              ),
-                                              Row(
-                                                children: const <Widget>[
-                                                  Text(
-                                                    'Lorem ipsum dolor.......',
-                                                    style: TextStyle(
-                                                        color:
-                                                            Color(0xFFB11F1F),
-                                                        fontFamily: 'Popm',
-                                                        fontSize: 12),
-                                                  )
-                                                ],
-                                              ),
-                                              Row(
-                                                mainAxisAlignment:
-                                                    MainAxisAlignment.end,
-                                                children: <Widget>[
-                                                  Container(
-                                                    width: 96,
-                                                    height: 20,
-                                                    alignment: Alignment.center,
-                                                    decoration: BoxDecoration(
-                                                      color: const Color(
-                                                          0xFFE8FEBE),
-                                                      borderRadius:
-                                                          BorderRadius.circular(
-                                                              12),
-                                                    ),
-                                                    child: Row(
-                                                      mainAxisAlignment:
-                                                          MainAxisAlignment
-                                                              .center,
-                                                      children: const <Widget>[
-                                                        InkWell(
-                                                          child: Icon(
-                                                            Icons
-                                                                .remove_circle_outline,
-                                                            color: Color(
-                                                                0xff1E8040),
-                                                            size: 20,
-                                                          ),
-                                                        ),
-                                                        Spacer(),
-                                                        Text(
-                                                          '1',
-                                                          style: TextStyle(
-                                                              color:
-                                                                  Colors.black,
-                                                              fontFamily:
-                                                                  'Popm',
-                                                              fontSize: 14),
-                                                        ),
-                                                        Spacer(),
-                                                        InkWell(
-                                                          child: Icon(
-                                                            Icons
-                                                                .add_circle_outline,
-                                                            color: Color(
-                                                                0xff1E8040),
-                                                            size: 20,
-                                                          ),
-                                                        ),
-                                                      ],
-                                                    ),
-                                                  )
-                                                ],
-                                              )
-                                            ],
-                                          ),
-                                        )
-                                      ],
-                                    ),
-                                  )),
-                              Positioned(
-                                right: 0,
-                                child: Container(
-                                  height: 22,
-                                  width: 96,
-                                  alignment: Alignment.center,
-                                  decoration: const BoxDecoration(
-                                      color: Color(0xFFCAEAF4),
-                                      borderRadius: BorderRadius.only(
-                                          topRight: Radius.circular(8),
-                                          topLeft: Radius.circular(11),
-                                          bottomLeft: Radius.circular(11),
-                                          bottomRight: Radius.zero)),
-                                  child: Row(
-                                    mainAxisAlignment: MainAxisAlignment.center,
-                                    children: const <Widget>[
-                                      Text('Alternative',
-                                          style: TextStyle(
-                                              color: Colors.black,
-                                              fontSize: 12)),
-                                      SizedBox(
-                                        width: 2.5,
-                                      ),
-                                      Icon(
-                                        Icons.info,
-                                        color: Color(0xFF8BC53F),
-                                        size: 20,
                                       )
                                     ],
                                   ),
-                                ),
-                              ),
-                            ],
+                                )),
                           )
                         ],
                       ),
@@ -776,242 +486,558 @@ class HomePage extends StatelessWidget {
                           color: Colors.white),
                       child: Row(
                         children: <Widget>[
-                          Stack(
-                            children: <Widget>[
-                              ClipRRect(
-                                borderRadius: const BorderRadius.only(
-                                    topLeft: Radius.circular(8),
-                                    topRight: Radius.zero,
-                                    bottomLeft: Radius.circular(8),
-                                    bottomRight: Radius.zero),
-                                child: Image.asset(
-                                  'images/strawberry.png',
-                                  filterQuality: FilterQuality.high,
-                                  height: 155,
-                                  width: 114,
-                                  fit: BoxFit.cover,
-                                ),
-                              ),
-                              Container(
-                                height: 20,
-                                width: 94,
-                                padding:
-                                    const EdgeInsets.symmetric(horizontal: 3),
-                                alignment: Alignment.centerLeft,
-                                decoration: const BoxDecoration(
-                                    color: Color(0xff8BC53F),
-                                    borderRadius: BorderRadius.only(
-                                        topLeft: Radius.circular(16),
-                                        topRight: Radius.zero,
-                                        bottomRight: Radius.circular(40),
-                                        bottomLeft: Radius.zero)),
-                                child: const Text(
-                                  '10% Discount',
-                                  style: TextStyle(
-                                    color: Colors.white,
-                                    fontSize: 10,
-                                    fontFamily: 'Popm',
+                          Expanded(
+                            flex: 3,
+                            child: Stack(
+                              children: <Widget>[
+                                ClipRRect(
+                                  borderRadius: const BorderRadius.only(
+                                      topLeft: Radius.circular(8),
+                                      topRight: Radius.zero,
+                                      bottomLeft: Radius.circular(8),
+                                      bottomRight: Radius.zero),
+                                  child: Image.asset(
+                                    'images/strawberry.png',
+                                    filterQuality: FilterQuality.high,
+                                    height: 155,
+                                    width: 114,
+                                    fit: BoxFit.cover,
                                   ),
                                 ),
-                              ),
-                              Positioned(
-                                bottom: 3,
-                                right: 7,
-                                child: Opacity(
-                                  opacity: 0.85,
-                                  child: Container(
-                                    alignment: Alignment.center,
-                                    height: 17,
-                                    width: 42,
-                                    decoration: BoxDecoration(
+                                Container(
+                                  height: 20,
+                                  width: 94,
+                                  padding:
+                                      const EdgeInsets.symmetric(horizontal: 3),
+                                  alignment: Alignment.centerLeft,
+                                  decoration: const BoxDecoration(
+                                      color: Color(0xff8BC53F),
+                                      borderRadius: BorderRadius.only(
+                                          topLeft: Radius.circular(16),
+                                          topRight: Radius.zero,
+                                          bottomRight: Radius.circular(40),
+                                          bottomLeft: Radius.zero)),
+                                  child: const Text(
+                                    '10% Discount',
+                                    style: TextStyle(
                                         color: Colors.white,
-                                        borderRadius:
-                                            BorderRadius.circular(16)),
+                                        fontSize: 10,
+                                        fontFamily: 'Popm'),
+                                  ),
+                                ),
+                                Positioned(
+                                  bottom: 3,
+                                  right: 7,
+                                  child: Opacity(
+                                    opacity: 0.85,
+                                    child: Container(
+                                      alignment: Alignment.center,
+                                      height: 17,
+                                      width: 42,
+                                      decoration: BoxDecoration(
+                                          color: Colors.white,
+                                          borderRadius:
+                                              BorderRadius.circular(16)),
+                                      child: Row(
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.center,
+                                        children: const <Widget>[
+                                          Icon(
+                                            Icons.star,
+                                            color: Color(0xff1E8040),
+                                            size: 14,
+                                          ),
+                                          Text(
+                                            '4.5',
+                                            style: TextStyle(
+                                                fontSize: 10,
+                                                fontFamily: 'Popm'),
+                                          ),
+                                        ],
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                              ],
+                            ),
+                          ),
+                          Expanded(
+                            flex: 7,
+                            child: Stack(
+                              children: [
+                                Padding(
+                                    padding: const EdgeInsets.symmetric(
+                                        horizontal: 5),
+                                    child: Container(
+                                      height: 155,
+                                      color: Colors.white,
+                                      child: Column(
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.start,
+                                        children: <Widget>[
+                                          Row(
+                                            children: <Widget>[
+                                              Image.asset(
+                                                'images/tesco.png',
+                                                height: 50,
+                                                filterQuality:
+                                                    FilterQuality.high,
+                                              ),
+                                            ],
+                                          ),
+                                          Padding(
+                                            padding: const EdgeInsets.symmetric(
+                                                horizontal: 5),
+                                            child: Column(
+                                              children: <Widget>[
+                                                Row(
+                                                  children: const <Widget>[
+                                                    Text(
+                                                      'Samsung TV',
+                                                      style: TextStyle(
+                                                          color: Colors.black,
+                                                          fontFamily: 'Popm',
+                                                          fontSize: 11),
+                                                    ),
+                                                  ],
+                                                ),
+                                                const SizedBox(
+                                                  height: 2.5,
+                                                ),
+                                                Row(
+                                                  children: const <Widget>[
+                                                    Text(
+                                                      'Screen Size',
+                                                      style: TextStyle(
+                                                          color: Colors.black,
+                                                          fontFamily: 'Popm',
+                                                          fontSize: 11),
+                                                    ),
+                                                    Spacer(),
+                                                    Text(
+                                                      '6 x KG',
+                                                      style: TextStyle(
+                                                          color: Colors.black,
+                                                          fontFamily: 'Popm',
+                                                          fontSize: 11),
+                                                    ),
+                                                  ],
+                                                ),
+                                                const SizedBox(
+                                                  height: 2.5,
+                                                ),
+                                                Row(
+                                                  children: const <Widget>[
+                                                    Text(
+                                                      '(500 g - £5)',
+                                                      style: TextStyle(
+                                                          color:
+                                                              Color(0xFF858585),
+                                                          fontFamily: 'Popm',
+                                                          fontSize: 11),
+                                                    ),
+                                                    Spacer(),
+                                                    Text(
+                                                      '£ 7.90',
+                                                      style: TextStyle(
+                                                          color: Colors.black,
+                                                          fontFamily: 'Popm',
+                                                          decoration:
+                                                              TextDecoration
+                                                                  .lineThrough,
+                                                          fontSize: 9),
+                                                    ),
+                                                    SizedBox(
+                                                      width: 10,
+                                                    ),
+                                                    Text(
+                                                      '£ 6.90',
+                                                      style: TextStyle(
+                                                          color:
+                                                              Color(0xff1E8040),
+                                                          fontFamily: 'Popm',
+                                                          fontWeight:
+                                                              FontWeight.bold,
+                                                          fontSize: 12),
+                                                    ),
+                                                  ],
+                                                ),
+                                                const SizedBox(
+                                                  height: 3,
+                                                ),
+                                                Row(
+                                                  children: const <Widget>[
+                                                    Text(
+                                                      'Lorem ipsum dolor.......',
+                                                      style: TextStyle(
+                                                          color:
+                                                              Color(0xFFB11F1F),
+                                                          fontFamily: 'Popm',
+                                                          fontSize: 12),
+                                                    )
+                                                  ],
+                                                ),
+                                                Row(
+                                                  mainAxisAlignment:
+                                                      MainAxisAlignment.end,
+                                                  children: <Widget>[
+                                                    Container(
+                                                      width: 96,
+                                                      height: 20,
+                                                      alignment:
+                                                          Alignment.center,
+                                                      decoration: BoxDecoration(
+                                                        color: const Color(
+                                                            0xFFE8FEBE),
+                                                        borderRadius:
+                                                            BorderRadius
+                                                                .circular(12),
+                                                      ),
+                                                      child: Row(
+                                                        mainAxisAlignment:
+                                                            MainAxisAlignment
+                                                                .center,
+                                                        children: const <
+                                                            Widget>[
+                                                          InkWell(
+                                                            child: Icon(
+                                                              Icons
+                                                                  .remove_circle_outline,
+                                                              color: Color(
+                                                                  0xff1E8040),
+                                                              size: 20,
+                                                            ),
+                                                          ),
+                                                          Spacer(),
+                                                          Text(
+                                                            '1',
+                                                            style: TextStyle(
+                                                                color: Colors
+                                                                    .black,
+                                                                fontFamily:
+                                                                    'Popm',
+                                                                fontSize: 14),
+                                                          ),
+                                                          Spacer(),
+                                                          InkWell(
+                                                            child: Icon(
+                                                              Icons
+                                                                  .add_circle_outline,
+                                                              color: Color(
+                                                                  0xff1E8040),
+                                                              size: 20,
+                                                            ),
+                                                          ),
+                                                        ],
+                                                      ),
+                                                    )
+                                                  ],
+                                                )
+                                              ],
+                                            ),
+                                          )
+                                        ],
+                                      ),
+                                    )),
+                                Positioned(
+                                  right: 0,
+                                  child: Container(
+                                    height: 22,
+                                    width: 96,
+                                    alignment: Alignment.center,
+                                    decoration: const BoxDecoration(
+                                        color: Color(0xFFCAEAF4),
+                                        borderRadius: BorderRadius.only(
+                                            topRight: Radius.circular(8),
+                                            topLeft: Radius.circular(11),
+                                            bottomLeft: Radius.circular(11),
+                                            bottomRight: Radius.zero)),
                                     child: Row(
                                       mainAxisAlignment:
                                           MainAxisAlignment.center,
                                       children: const <Widget>[
+                                        Text('Alternative',
+                                            style: TextStyle(
+                                                color: Colors.black,
+                                                fontSize: 12)),
+                                        SizedBox(
+                                          width: 2.5,
+                                        ),
                                         Icon(
-                                          Icons.star,
-                                          color: Color(0xff1E8040),
-                                          size: 14,
-                                        ),
-                                        Text(
-                                          '4.5',
-                                          style: TextStyle(
-                                            fontSize: 10,
-                                            fontFamily: 'Popm',
-                                          ),
-                                        ),
+                                          Icons.info,
+                                          color: Color(0xFF8BC53F),
+                                          size: 20,
+                                        )
                                       ],
                                     ),
                                   ),
                                 ),
-                              ),
-                            ],
-                          ),
-                          Padding(
-                              padding:
-                                  const EdgeInsets.symmetric(horizontal: 5),
-                              child: Container(
-                                height: 155,
-                                width: 228.7,
-                                color: Colors.white,
-                                child: Column(
-                                  mainAxisAlignment: MainAxisAlignment.start,
-                                  children: <Widget>[
-                                    Row(
-                                      children: <Widget>[
-                                        Image.asset(
-                                          'images/tesco.png',
-                                          height: 50,
-                                          filterQuality: FilterQuality.high,
-                                        ),
-                                      ],
+                              ],
+                            ),
+                          )
+                        ],
+                      ),
+                    ),
+                  ),
+                  Padding(
+                    padding: const EdgeInsets.all(20.0),
+                    child: Container(
+                      decoration: BoxDecoration(
+                          borderRadius: BorderRadius.circular(8),
+                          boxShadow: const [
+                            BoxShadow(
+                              color: Colors.grey,
+                              blurRadius: 6,
+                            )
+                          ],
+                          color: Colors.white),
+                      child: Row(
+                        children: <Widget>[
+                          Expanded(
+                            flex: 3,
+                            child: Stack(
+                              children: <Widget>[
+                                ClipRRect(
+                                  borderRadius: const BorderRadius.only(
+                                      topLeft: Radius.circular(8),
+                                      topRight: Radius.zero,
+                                      bottomLeft: Radius.circular(8),
+                                      bottomRight: Radius.zero),
+                                  child: Image.asset(
+                                    'images/strawberry.png',
+                                    filterQuality: FilterQuality.high,
+                                    height: 155,
+                                    width: 114,
+                                    fit: BoxFit.cover,
+                                  ),
+                                ),
+                                Container(
+                                  height: 20,
+                                  width: 94,
+                                  padding:
+                                      const EdgeInsets.symmetric(horizontal: 3),
+                                  alignment: Alignment.centerLeft,
+                                  decoration: const BoxDecoration(
+                                      color: Color(0xff8BC53F),
+                                      borderRadius: BorderRadius.only(
+                                          topLeft: Radius.circular(16),
+                                          topRight: Radius.zero,
+                                          bottomRight: Radius.circular(40),
+                                          bottomLeft: Radius.zero)),
+                                  child: const Text(
+                                    '10% Discount',
+                                    style: TextStyle(
+                                      color: Colors.white,
+                                      fontSize: 10,
+                                      fontFamily: 'Popm',
                                     ),
-                                    Padding(
-                                      padding: const EdgeInsets.symmetric(
-                                          horizontal: 5),
-                                      child: Column(
-                                        children: <Widget>[
-                                          Row(
-                                            children: const <Widget>[
-                                              Text(
-                                                'Samsung TV',
-                                                style: TextStyle(
-                                                    color: Colors.black,
-                                                    fontFamily: 'Popm',
-                                                    fontSize: 11),
-                                              ),
-                                            ],
+                                  ),
+                                ),
+                                Positioned(
+                                  bottom: 3,
+                                  right: 7,
+                                  child: Opacity(
+                                    opacity: 0.85,
+                                    child: Container(
+                                      alignment: Alignment.center,
+                                      height: 17,
+                                      width: 42,
+                                      decoration: BoxDecoration(
+                                          color: Colors.white,
+                                          borderRadius:
+                                              BorderRadius.circular(16)),
+                                      child: Row(
+                                        mainAxisAlignment:
+                                            MainAxisAlignment.center,
+                                        children: const <Widget>[
+                                          Icon(
+                                            Icons.star,
+                                            color: Color(0xff1E8040),
+                                            size: 14,
                                           ),
-                                          const SizedBox(
-                                            height: 2.5,
+                                          Text(
+                                            '4.5',
+                                            style: TextStyle(
+                                              fontSize: 10,
+                                              fontFamily: 'Popm',
+                                            ),
                                           ),
-                                          Row(
-                                            children: const <Widget>[
-                                              Text(
-                                                'Screen Size',
-                                                style: TextStyle(
-                                                    color: Colors.black,
-                                                    fontFamily: 'Popm',
-                                                    fontSize: 11),
-                                              ),
-                                              Spacer(),
-                                              Text(
-                                                '6 x KG',
-                                                style: TextStyle(
-                                                    color: Colors.black,
-                                                    fontFamily: 'Popm',
-                                                    fontSize: 11),
-                                              ),
-                                            ],
-                                          ),
-                                          const SizedBox(
-                                            height: 2.5,
-                                          ),
-                                          Row(
-                                            children: const <Widget>[
-                                              Text(
-                                                '(500 g - £5)',
-                                                style: TextStyle(
-                                                    color: Color(0xFF858585),
-                                                    fontFamily: 'Popm',
-                                                    fontSize: 11),
-                                              ),
-                                              Spacer(),
-                                              Text(
-                                                '£ 7.90',
-                                                style: TextStyle(
-                                                    color: Colors.black,
-                                                    fontFamily: 'Popm',
-                                                    decoration: TextDecoration
-                                                        .lineThrough,
-                                                    fontSize: 9),
-                                              ),
-                                              SizedBox(
-                                                width: 10,
-                                              ),
-                                              Text(
-                                                '£ 6.90',
-                                                style: TextStyle(
-                                                    color: Color(0xff1E8040),
-                                                    fontFamily: 'Popm',
-                                                    fontWeight: FontWeight.bold,
-                                                    fontSize: 12),
-                                              ),
-                                            ],
-                                          ),
-                                          const SizedBox(
-                                            height: 3,
-                                          ),
-                                          Row(
-                                            children: const <Widget>[
-                                              Text(
-                                                'Lorem ipsum dolor.......',
-                                                style: TextStyle(
-                                                    color: Color(0xFFB11F1F),
-                                                    fontFamily: 'Popm',
-                                                    fontSize: 12),
-                                              )
-                                            ],
-                                          ),
-                                          Row(
-                                            mainAxisAlignment:
-                                                MainAxisAlignment.end,
-                                            children: <Widget>[
-                                              Container(
-                                                width: 96,
-                                                height: 20,
-                                                alignment: Alignment.center,
-                                                decoration: BoxDecoration(
-                                                  color:
-                                                      const Color(0xFFE8FEBE),
-                                                  borderRadius:
-                                                      BorderRadius.circular(12),
-                                                ),
-                                                child: Row(
-                                                  mainAxisAlignment:
-                                                      MainAxisAlignment.center,
-                                                  children: const <Widget>[
-                                                    InkWell(
-                                                      child: Icon(
-                                                        Icons
-                                                            .remove_circle_outline,
-                                                        color:
-                                                            Color(0xff1E8040),
-                                                        size: 20,
-                                                      ),
-                                                    ),
-                                                    Spacer(),
-                                                    Text(
-                                                      '1',
-                                                      style: TextStyle(
-                                                          color: Colors.black,
-                                                          fontFamily: 'Popm',
-                                                          fontSize: 14),
-                                                    ),
-                                                    Spacer(),
-                                                    InkWell(
-                                                      child: Icon(
-                                                        Icons
-                                                            .add_circle_outline,
-                                                        color:
-                                                            Color(0xff1E8040),
-                                                        size: 20,
-                                                      ),
-                                                    ),
-                                                  ],
-                                                ),
-                                              )
-                                            ],
-                                          )
                                         ],
                                       ),
-                                    )
-                                  ],
+                                    ),
+                                  ),
                                 ),
-                              ))
+                              ],
+                            ),
+                          ),
+                          Expanded(
+                            flex: 7,
+                            child: Padding(
+                                padding:
+                                    const EdgeInsets.symmetric(horizontal: 5),
+                                child: Container(
+                                  height: 155,
+                                  width: 228.7,
+                                  color: Colors.white,
+                                  child: Column(
+                                    mainAxisAlignment: MainAxisAlignment.start,
+                                    children: <Widget>[
+                                      Row(
+                                        children: <Widget>[
+                                          Image.asset(
+                                            'images/tesco.png',
+                                            height: 50,
+                                            filterQuality: FilterQuality.high,
+                                          ),
+                                        ],
+                                      ),
+                                      Padding(
+                                        padding: const EdgeInsets.symmetric(
+                                            horizontal: 5),
+                                        child: Column(
+                                          children: <Widget>[
+                                            Row(
+                                              children: const <Widget>[
+                                                Text(
+                                                  'Samsung TV',
+                                                  style: TextStyle(
+                                                      color: Colors.black,
+                                                      fontFamily: 'Popm',
+                                                      fontSize: 11),
+                                                ),
+                                              ],
+                                            ),
+                                            const SizedBox(
+                                              height: 2.5,
+                                            ),
+                                            Row(
+                                              children: const <Widget>[
+                                                Text(
+                                                  'Screen Size',
+                                                  style: TextStyle(
+                                                      color: Colors.black,
+                                                      fontFamily: 'Popm',
+                                                      fontSize: 11),
+                                                ),
+                                                Spacer(),
+                                                Text(
+                                                  '6 x KG',
+                                                  style: TextStyle(
+                                                      color: Colors.black,
+                                                      fontFamily: 'Popm',
+                                                      fontSize: 11),
+                                                ),
+                                              ],
+                                            ),
+                                            const SizedBox(
+                                              height: 2.5,
+                                            ),
+                                            Row(
+                                              children: const <Widget>[
+                                                Text(
+                                                  '(500 g - £5)',
+                                                  style: TextStyle(
+                                                      color: Color(0xFF858585),
+                                                      fontFamily: 'Popm',
+                                                      fontSize: 11),
+                                                ),
+                                                Spacer(),
+                                                Text(
+                                                  '£ 7.90',
+                                                  style: TextStyle(
+                                                      color: Colors.black,
+                                                      fontFamily: 'Popm',
+                                                      decoration: TextDecoration
+                                                          .lineThrough,
+                                                      fontSize: 9),
+                                                ),
+                                                SizedBox(
+                                                  width: 10,
+                                                ),
+                                                Text(
+                                                  '£ 6.90',
+                                                  style: TextStyle(
+                                                      color: Color(0xff1E8040),
+                                                      fontFamily: 'Popm',
+                                                      fontWeight:
+                                                          FontWeight.bold,
+                                                      fontSize: 12),
+                                                ),
+                                              ],
+                                            ),
+                                            const SizedBox(
+                                              height: 3,
+                                            ),
+                                            Row(
+                                              children: const <Widget>[
+                                                Text(
+                                                  'Lorem ipsum dolor.......',
+                                                  style: TextStyle(
+                                                      color: Color(0xFFB11F1F),
+                                                      fontFamily: 'Popm',
+                                                      fontSize: 12),
+                                                )
+                                              ],
+                                            ),
+                                            Row(
+                                              mainAxisAlignment:
+                                                  MainAxisAlignment.end,
+                                              children: <Widget>[
+                                                Container(
+                                                  width: 96,
+                                                  height: 20,
+                                                  alignment: Alignment.center,
+                                                  decoration: BoxDecoration(
+                                                    color:
+                                                        const Color(0xFFE8FEBE),
+                                                    borderRadius:
+                                                        BorderRadius.circular(
+                                                            12),
+                                                  ),
+                                                  child: Row(
+                                                    mainAxisAlignment:
+                                                        MainAxisAlignment
+                                                            .center,
+                                                    children: const <Widget>[
+                                                      InkWell(
+                                                        child: Icon(
+                                                          Icons
+                                                              .remove_circle_outline,
+                                                          color:
+                                                              Color(0xff1E8040),
+                                                          size: 20,
+                                                        ),
+                                                      ),
+                                                      Spacer(),
+                                                      Text(
+                                                        '1',
+                                                        style: TextStyle(
+                                                            color: Colors.black,
+                                                            fontFamily: 'Popm',
+                                                            fontSize: 14),
+                                                      ),
+                                                      Spacer(),
+                                                      InkWell(
+                                                        child: Icon(
+                                                          Icons
+                                                              .add_circle_outline,
+                                                          color:
+                                                              Color(0xff1E8040),
+                                                          size: 20,
+                                                        ),
+                                                      ),
+                                                    ],
+                                                  ),
+                                                )
+                                              ],
+                                            )
+                                          ],
+                                        ),
+                                      )
+                                    ],
+                                  ),
+                                )),
+                          )
                         ],
                       ),
                     ),
